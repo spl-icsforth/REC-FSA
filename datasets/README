@@ -1,9 +1,7 @@
-The WSN-INDFEAT-DATASET is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/ - See more at: http://opendatacommons.org/licenses/odbl/#sthash.RTEDZzFr.dpuf
 
 
-//////////////////////////////////////////////
-// Data collection Specification
-//////////////////////////////////////////////
+##Data collection Specification
+
 This folder contains datasets of network features, extracted from WSN measurements at an industrial environment during the period 05-06/06/2014. 
 
 Contributors:
@@ -12,25 +10,25 @@ Athanasia Panousopoulou, Institute of Computer Science, Foundation for Research 
 
 Contact address: apanouso@ics.forth.gr
 
-**********************************************
-Section 1: Network Configuration
-**********************************************
+
+#Section 1: Network Configuration
+
 
 1. Sensor Nodes Platform: AdvanticSyS XM1000 and CM5000-SMA (IEEE 802.15.4-compliant devices)
 2. Network Size: 10 sensor nodes (node id=1,2,..10) and a sink node (running on a pandaboard).
 3. Transmission Period: 6sec
 4. Protocol Stack: Customized, based on Contiki OS-version 2.6- and incorporating the IETF Standard for Routing over Low-Power and Lossy Networks. For more information (see the acknowledgement section).
 
-**********************************************
-Section 2: Type of Traffic
-**********************************************
+
+#Section 2: Type of Traffic
+
 Network monitoring traffic including, metrics from the Physical, MAC, and NWK layers, as well as ambient sensors readings (temperature and humidity) and voltage threshold on each sensor node.
 The traffic recorded is related to the links established at the application layer between each node (id = 1,2,..10) and a sink node. 
 The traffic is recorded at the sink node.
 
-**********************************************
-Section 3: Data Format
-**********************************************
+
+#Section 3: Data Format
+
 
 Each csv file relates to the network traffic recorded at the sink node, and originated by each individual sensor node.
 
@@ -62,7 +60,7 @@ The above data are features extracted by splitting raw network instances into wi
 **No other pre-processing (e.g., filtering, z-score normalization) applies on this specific dataset**
 
 
-Acknowledgements:
+#Acknowledgements:
 This work was supported by the FP7 EU-HYDROBIONETS project (ICT-2011-7,  GA-2011-287613).
 We are also grateful to Acciona Agua (http://www.acciona-agua.com/) for providing the premises of La Tordera's desalination plant, as well as to Professor Baltasar Beferull-Lozano, Eugenio Celada, and Ioannis Glaropoulos for assisting with the WSN protocol stacks development and deployment at the industrial plant.
 
@@ -71,7 +69,7 @@ The protocol stack deployment was based on:
 demand, in: Wireless Communications and Networking Conference (WCNC), 2013 IEEE, 2013, pp. 268-273.
 [2] P. Di Marco, C. Fischione, G. Athanasiou, P.-V. Mekikis, Harmonizing mac and routing in low power and lossy networks, in: Global Communications Conference (GLOBECOM), 2013 IEEE, 2013, pp. 231-236.
 
-Additional References:
+#Additional References:
 [3] A. Woo, T. Tong, D. Culler, Taming the underlying challenges of reliable multihop routing in sensor networks, in: Proceedings of the 1st International Conference
 on Embedded Networked Sensor Systems, SenSys ’03, ACM, New York, NY, USA, 2003, pp. 14-27.
 
